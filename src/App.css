@@ -7,15 +7,15 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
-  
 }
 .modal {
   width: 30vw;
-  height: 30vh;
+  height: 70vh;
   transform: 'translate(-50%, -50%)';
   z-index: 100;
   background-color: white;
   position: relative;
+  animation:fadein .5s;
 }
 .close {
   position: absolute;
@@ -28,4 +28,14 @@
 p {
   margin: 0 auto;
   padding: 10px 20px;
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+    top: -1000px;
+	}
+	to {
+		opacity:1;
+    top: 0px;
+	}
 }

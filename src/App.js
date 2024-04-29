@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useState} from "react";
 
@@ -10,7 +9,7 @@ function App() {
   }
   return (
     <div className="App">
-      <button className="open" onClick={toggleModal}>Open Modal</button>
+    {!modal && <button className="open" onClick={toggleModal}>Open Modal</button>}
     {modal && (
       <div className="modal">
       <button className="close" onClick={toggleModal}>X</button>
